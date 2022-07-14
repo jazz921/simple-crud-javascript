@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simple CRUD</h1>
+
+    <div class="screen-container">
+        <!-- FORM INPUTS -->
+        <div class="form-container">
+            <form onsubmit="event.preventDefault(); formSubmit();">
+                <div class="input-container">
+                    <label for="fullName">Full Name</label><br>
+                    <input type="text" name="" id="full-name">
+                </div>
+                <div class="input-container">
+                    <label for="StudentNumber">Student Number</label><br>
+                    <input type="text" name="" id="stud-num">
+                </div>
+                <div class="input-container">
+                    <label for="Age">Age</label><br>
+                    <input type="text" name="" id="age">
+                </div>
+                <div class="input-container">
+                    <label for="Course">Course</label><br>
+                    <input type="text" name="" id="course">
+                </div>
+                <div class="button-container">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear</button>
+                </div>
+            </form>
+        </div>
+    
+        <!-- TABLE -->
+        <div class="table-container">
+            <table id="table">
+                <tr>
+                    <th>Full Name</th>
+                    <th>Student Number</th>
+                    <th>Age</th>
+                    <th>Course</th>
+                    <th>Options</th>
+                </tr>
+                <tbody>
+                    
+                </tbody>
+
+
+            </table>
+        </div>
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
